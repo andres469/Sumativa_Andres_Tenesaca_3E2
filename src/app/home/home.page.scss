@@ -1,0 +1,42 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70%;
+  transform: translateY(-50%);
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card ion-card {
+  width: 50%;
+}
+
+.card ion-card-title {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.card ion-card-content {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+.card ion-card a {
+  text-decoration: none;
+}
+
+/* Media query para pantallas medianas y pequeñas */
+@media screen and (max-width: 991px) {
+  .news-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,40 @@
+<!-- nav-bar.component.html -->
+<ion-toolbar color="primary">
+  <ion-buttons slot="start">
+    <!-- Botón en el lado izquierdo -->
+    <ion-button>
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+
+  <ion-title>
+    <!-- Título de la barra -->
+    Conociendo Ecuador 
+  </ion-title>
+
+  <ion-buttons slot="end">
+    <!-- Botones en el lado derecho -->
+    <ion-button>
+      <ion-icon slot="icon-only" name="search"></ion-icon>
+    </ion-button>
+
+    <ion-button (click)="openPopover()">
+      <ion-icon slot="icon-only" name="notifications"></ion-icon>
+
+      <div class="popover-content">
+        <p class="popover-title">Noticias actuales</p>
+        <!-- Agrega aquí tu contenido de noticias -->
+        <ion-list>
+          <ion-item>
+            <ion-label>Noticia 1</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Noticia 2</ion-label>
+          </ion-item>
+          <!-- Agrega más noticias según sea necesario -->
+        </ion-list>
+        <ion-button (click)="closePopover()">Cerrar</ion-button>
+      </div>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>

@@ -1,0 +1,31 @@
+/* nav-bar.component.scss */
+ion-toolbar {
+    --ion-toolbar-background: #3880ff;
+    color: #fff;
+  }
+  
+  ion-button {
+    position: relative;
+  }
+  
+  ion-button .popover-content {
+    position: absolute;
+    top: 40px; /* Ajusta la posición vertical según tus necesidades */
+    right: 0;
+    z-index: 1;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.879);
+    display: none;
+  }
+  
+  ion-button:hover .popover-content {
+    display: block;
+  }
+  
+  .popover-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
